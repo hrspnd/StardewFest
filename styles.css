@@ -1,0 +1,1236 @@
+* {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* NAVBAR STYLING */
+.navbar {
+    margin: 0;
+    position: sticky;
+    top: 0; 
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F2D499; /* Inner background color */
+    height: 80px; /* Set a fixed height for the navbar */
+    border: 6px solid #B66C3F; /* Inside border */
+}
+
+.navbar .title {
+    display: flex;
+    font-family: 'VT323', monospace;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar .title img {
+    height: 100%; /* Make the image take up the full height of the navbar */
+    margin: 0; /* Remove any margins */
+    padding: 0; /* Remove any padding */
+}
+
+.navbar .title span {
+    font-size: 5vw; /* Responsive font size for the title */
+    color: #C3612E; /* Color of the text to match the border */
+    margin-left: 10px; /* Add some space between the image and the text */
+}
+
+.navbar .title .winter-span{
+    font-size: 4vw;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.navbar ul li {
+    margin: 0 0.78vw;
+    padding: 0; /* Reset padding */
+    display: flex; /* Ensure li is a flex container */
+    align-items: center; /* Vertically center contents */
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #e0753b; /* Link color to match the border */
+    font-size: 1.5vw; /* Responsive font size for the links */
+    font-family: 'Silkscreen', cursive; /* Apply Silkscreen font to the buttons */
+    background-color: #FFE0A6;
+    padding: 5px 10px; /* Add some padding around the text */
+    border: 5px solid #D68D52C4; /* Combined borders */
+    border-left-color: #FFEBB8; /* Different left border */
+    border-bottom-color: #FFEBB8; /* Different bottom border */
+    display: inline-block; /* Ensure anchor behaves like a block for padding */
+    margin: 0; /* Reset margin */
+    line-height: normal; /* Ensure default line-height doesn't affect alignment */
+    max-height: 40px;
+}
+/* Hamburger Menu Styles */
+.burger {
+    display: none; /* Hidden by default */
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 30px;
+    margin-right: 20px; /* Add some space to the right */
+}
+
+.line {
+    height: 4px;
+    width: 30px;
+    background-color: #C3612E; /* Color of the burger lines */
+}
+/* END OF BURGER */
+
+.festival {
+    font-size: 25px;
+    display: block; /* Stack the festival names on top of each other */
+    text-align: center; /* Center-align text within the link */
+    line-height: 20px;
+    letter-spacing: -0.21rem;
+}
+
+.one-line {
+    display: inline-block;
+    width: 100%; /* Ensure it takes up the entire width of the container */
+    text-align: center;
+}
+
+.navbar ul li a:hover {
+    color: #C86730;
+}
+
+/* END OF NAVBAR STYLING */
+
+
+h2{
+    font-family: "VT323", monospace;
+    margin-top: 0.5rem;
+    font-size: 80px;
+    color: #C3612E;
+}
+
+p, a, .brand{
+    margin-top: 0.75rem;
+    font-family: "Roboto Mono", monospace;
+    font-size: 20px;
+    text-align: justify;
+    width: 95%;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.top-images{
+    display: flex;
+    justify-content: center; /* This centers the images horizontally */
+    flex-wrap: wrap;
+    gap: 10px; /* Optional: adds space between the images */
+    background: linear-gradient(180deg, rgba(239, 174, 105, 0.78) 0%, #FFE6B6 48.5%, rgba(239, 174, 105, 0.92) 100%);
+}
+
+.festival-button {
+    display: inline-block; /* Align buttons horizontally */
+    width: 473px; /* Set the desired width */
+    height: 400px; /* Set the desired height */
+    background-size: cover; /* Ensures the image covers the div */
+    cursor: pointer; /* Changes cursor to pointer on hover */
+    transition: transform 0.2s; /* Adds a transition effect */
+    margin: 10px; /* Adds some space between buttons */
+}
+
+.festival-button:hover {
+    transform: scale(1.05); /* Grows the button on hover */
+}
+
+.bottom-row {
+    display: flex;
+    justify-content: center; /* Center the two images in the bottom row */
+    flex-wrap: wrap;
+    width: 100%; /* Forces the bottom row to take up full width */
+    margin-top: 10px; /* Optional: Add spacing between the two rows */
+}
+
+.top-image {
+    max-width: 100%; /* Ensures images don't overflow their container */
+    height: auto; /* Maintains the aspect ratio */
+    margin: 20px 10px;
+}
+
+.season-header{
+    position: sticky;
+    top: 80px; /* Adjust this value based on your nav's height */
+    z-index: 500;
+}
+
+.supplement {
+    width: 70px;       /* Set your desired width */
+    height: auto;      /* Maintain aspect ratio */
+    max-height: none;  /* Ensure no restrictions on height */
+    object-fit: contain; /* Control how the image should fit within its box */
+}
+
+/* BACKGROUND IMAGE HERO SECTION */
+.hero-section, .main-aboutus-page{
+    border-top: 0.5vw solid #B66C3F;
+    padding: 0.5rem;
+    min-height: 30vw;
+    background-image: url(media/hero_image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center bottom;
+
+}
+
+.hero-section h2{
+    color: #FFE9BE;
+    max-width: 60%;
+    padding-top: 5vw;
+    filter: drop-shadow(-5px 3px 4.3px rgba(0, 0, 0, 0.3));
+    margin-left: 20px;
+}
+
+.hero-section p{
+    color: white;
+    max-width: 50%;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-left: 20px;
+    filter: drop-shadow(-5px 3px 4.3px rgba(0, 0, 0, 0.53));
+}
+
+.explore-festivals{
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-left: 25px;
+}
+
+.explore-festivals button{
+    width: 300px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 0.76;
+    background-color: #B52121;
+    filter: drop-shadow(-5px 3px 4.3px rgba(0, 0, 0, 0.24));
+}
+
+.explore-festivals button:hover{
+    background-color: #9B1B1B;
+}
+
+.explore-festivals h3{
+    font-family: 'Inter', sans-serif;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}
+
+/* END OF HERO SECTION */
+.main-aboutus-page h3{
+    width: 380px;
+    background: linear-gradient(180deg, rgba(239, 174, 105, 0.78) 0%, #FFE6B6 48.5%, rgba(239, 174, 105, 0.92) 100%);
+    font-family: 'VT323', monospace;
+    color: #B52121;
+    font-size: 100px;
+    padding: 20px;
+}
+
+.main-aboutus-page .border-wrapper{
+    margin-left: 20px;
+    border-width: 15px;
+}
+
+.main-about p{
+    background-color: #F5C48A;
+    padding: 11px;
+    border: 11px solid #DD9E62;
+    line-height: 1.75;
+    width: 95%;
+    justify-content: center;
+    margin: 20px auto;
+    color: #723c1d;
+}
+
+.thanks{
+    display: block;
+    text-align: center;
+    margin: 0;
+    font-size: 130%;
+    font-style: italic;
+}
+/* TABLE STYLINGS */
+.border-wrapper {
+    margin: 10px auto;
+    border-style: solid;
+    border-width: 25px;
+    border-image: url(media/border.png) 20 repeat;
+    display: inline-block; /* Ensures the border only wraps the table content */
+}
+
+.center-div {
+    display: flex;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically if needed */
+}
+
+table {
+    width: 100%; /* Adjust to fit the div */
+    border-collapse: collapse; /* Collapse inner borders */
+    font-size: 30px;
+}
+
+th, td {    
+    font-family: 'Silkscreen', cursive;
+    border: 7px solid #DD9E62; /* Adds a border to table cells */
+    padding: 10px;
+    text-align: center;
+    background-color: #FFE0A6;
+}
+
+th, .season-left{
+    color: #8C3F16;
+}
+
+td{
+    color: #C3612E;
+}
+.darker-color {
+    background-color: #F5C48A;
+}
+
+/* END OF TABLE STYLINGS */
+
+.form-container {
+    display: flex; /* Set to flex to align children side by side */
+    align-items: flex-start; /* Align items at the start (top) */
+}
+
+.contact-us{
+    background: linear-gradient(180deg, rgba(239, 174, 105, 0.78) 0%, #FFE6B6 48.5%, rgba(239, 174, 105, 0.92) 100%);
+}
+
+.question h3{
+    font-family: 'VT323', monospace;
+    text-align: left;
+    font-size: 96px;
+    color: #B52121;
+    line-height: 0.7;
+    padding: 70px 30px 30px 70px;
+}
+
+.question-info{ /* whole div container */
+    width: 80%;
+    margin: 0 auto 50px 20px;
+}
+
+.question-info p{
+    padding-left: 50px;
+    font-size: 20px;
+    color: #B66C3F;
+}
+
+.question-info img{
+    margin-right: 1vw;
+}
+
+/* FORM STYLING */
+
+form {
+    width: 250vw; /* Adjust width to fill the remaining space */
+    height: 45vw;
+    margin: 20px 50px 20px auto; /* Remove margin for better alignment */
+    padding: 20px;
+    font-size: 30px;
+}
+
+.question-icon{
+    height: 25px;
+    width: 30px;
+    margin-right: 20px;
+}
+
+.contact-label{
+    font-family: 'Silkscreen', cursive;
+    font-weight: normal;
+    color: #723c1d;
+    padding-bottom: 10px;
+}
+
+.class-div {
+    margin-bottom: 15px;
+}
+
+.class-div:last-child {
+    text-align: right;
+}
+
+
+/* Flexbox for first name and last name fields */
+.name-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name-field {
+    width: 48%; 
+} /* end of first name and last name fields */
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+strong{
+    font-weight:bold;
+}
+
+em{
+    font-style: italic;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box; /* Ensures proper width with padding */
+    background-color: #FFE0A6;
+    color: #723c1d;
+    resize: none;
+    font-family: 'VT323', monospace;
+    border: 6px solid #DD9D62;
+
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #c3622e91; /* Gray placeholder text */
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+}
+
+
+.class-div.button-group .submit{
+    width: 400px;
+    margin-left: 20px;
+}
+
+.class-div.button-group .reset{
+    width: 250px;
+}
+
+/* END OF FORM STYLING */
+h1{
+    font-family: 'Silkscreen', cursive;
+    color: #C3612E;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 20px;
+}
+
+h3{
+    font-family: 'Silkscreen', cursive;
+    color: #AF5B2F;
+    text-align: center;
+    font-size: 30px;
+}
+
+.border-wrapper-audio {
+    margin: 10px auto 20px auto;
+    border-style: solid;
+    border-width: 20px;
+    border-image: url(media/border.png) 20 repeat;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.soundtrack-section {
+    margin: 0 auto; 
+    background-color: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center bottom;
+    padding: 10px; 
+    vertical-align: bottom;
+    width: 1000px;
+}
+
+.table-soundtrack-section{
+    background: linear-gradient(180deg, rgba(239, 174, 105, 0.78) 0%, #FFE6B6 48.5%, rgba(239, 174, 105, 0.92) 100%);
+    border: 8px solid #B66C3F;
+}
+/* AUDIO STYLING */
+
+.audio-player {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adds spacing between controls */
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto; /* Centers the audio player */
+    background-color: #ffe7bb;
+    padding: 10px;
+    border: 5px solid #B66C3F;
+}
+
+.fa{
+    font-size: 35px;
+}
+
+button {
+    background-color: #DD9E62;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: 'Silkscreen', cursive;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s ease;
+    transform: scale(1);
+}
+
+button:hover {
+    background-color: #C3612E;
+    
+    transform: scale(1.05);
+}
+
+.progress-container {
+    width: 500px;
+    height: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    position: relative; /* Required for correct positioning */
+    cursor: pointer; /* Makes the progress bar clickable */
+}
+
+.progress {
+    height: 100%;
+    background-color: #FF6347;
+    width: 0%; /* Initially 0%, will be updated as audio plays */
+    border-radius: 5px;
+}
+
+#play-button {
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+#pause-button {
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+/* END OF AUDIO STYLING */
+
+/* BACKGROUND IMAGE MORNING */
+.egg-festival, .flower-dance, .luau, .stardew-fair, .festival-of-ice, .winter-star{
+    border-top: 0.5vw solid #B66C3F;
+    padding: 0.5rem;
+    min-height: 30vw;
+    background-image: url(media/stardewbg_morning.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center bottom;
+}
+
+
+/* BACKGROUND IMAGE MIDDAY */
+.desert-festival, .trout-derby, .squidfest{
+    border-top: 0.5vw solid #B66C3F;
+    padding: 0.5rem;
+    min-height: 30vw;
+    background-image: url(media/stardewbg_midday.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center bottom;
+}
+
+/* BACKGROUND IMAGE NIGHT */
+.moonlight-jellies, .spirits-eve, .night-market{
+    border-top: 0.5vw solid #B66C3F;
+    padding: 0.5rem;
+    min-height: 30vw;
+    background-image: url(media/stardewbg_night.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center bottom;
+}
+
+/* FOOTER STYLING */
+footer {
+    border: 8px solid #B66C3F;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    padding-top: 30px; 
+    background: linear-gradient(180deg, rgba(239, 174, 105, 0.78) 0%, #FFE6B6 48.5%, rgba(239, 174, 105, 0.92) 100%);
+}
+
+.footer-icons, .footer-navbar {
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    margin: 10px 0; /* Adds vertical spacing */
+    color: #C3612E;
+}
+
+.footer-icons a img {
+    height: 45px;
+    width: auto;
+    margin-left: 2vw;
+    justify-content: center;
+}
+
+.footer-icons a{
+    width: 7vw;
+}
+
+.footer-navbar ul {
+    display: flex;
+    list-style-type: none; /* Removes bullet points */
+}
+
+.footer-navbar li {
+    margin: 0 15px; /* Adds horizontal spacing */
+}
+
+.footer-navbar a {
+    font-family: 'Silkscreen', cursive;
+    font-size: 35px;
+    text-decoration: none; /* Removes underline from links */
+    color: inherit;
+}
+
+.footer-navbar a:hover{
+    color: #994f24;
+}
+
+.signature {
+    margin-top: 30px;
+    background-color: #B66C3F;
+    width: 100%; /* Ensures the background fills the entire width */
+    padding: 20px 0; /* Optional: Add padding for spacing */
+    box-sizing: border-box; /* Ensures padding is included in the total width */
+}
+
+.signature p{
+    text-align: center;
+    color: #FFF; 
+    font-size: 20px; 
+    font-family: 'Silkscreen', cursive; 
+    margin: 0; /* Removes default margin on the paragraph */
+}
+
+.information{
+    margin: 2% 0 2% 1%;
+    width: 65%;
+    background-color: rgba(255, 255, 255, 0.79);
+    max-height: none;
+    padding: 10px 10px 50px 20px;
+}
+
+.framed {
+    float: right;
+    max-width: 30vw; /* Ensures the image fits within its container */
+    height: auto; 
+}
+
+/* Clear floats below the image */
+.stardew-fair::after {
+    content: "";
+    display: table;
+    clear: both; /* Ensures that the container wraps around floated elements */
+}
+
+/* Add margin to the last name field for spacing */
+.name-field:last-child {
+    margin-left: 4%; /* Adjust the value as needed for the desired gap */
+}
+
+.class-div.button-group {
+    display: flex; /* Use flexbox to arrange buttons in a row */
+    justify-content: space-between; /* Optional: Add space between buttons */
+    margin-top: 20px; /* Optional: Add some margin on top for spacing */
+}
+
+.class-div.button-group .submit,
+.class-div.button-group .reset {
+    width: 48%; /* Adjust width to fit side by side */
+}
+
+.question.question-tabletmobile{
+    display: none;
+}
+
+/* DESKTOP VIEW */
+@media screen and (min-width: 1025px){
+    .framed-tabletmobile{
+        display: none;
+    }
+
+    .form-container {
+        height: 1000px;
+    }
+
+    .navbar .title span{
+        font-size: 96px
+    }
+    .navbar .title .winter-span{
+        font-size: 	76.8px;
+    }
+    .navbar ul li a{
+        font-size: 28.8px;
+    }
+    
+}
+
+/* TABLET VIEW */
+@media screen and (min-width: 768px) and (max-width: 1025px) {
+
+    /* Hide the table or its container */
+    .table-soundtrack-section {
+        display: none; /* This will hide the table */
+    }
+
+    .supplement{
+        display: none;
+    }
+
+    .navbar ul li a{
+        max-width: none;
+        font-size: 1.3vw;
+        text-align: center;
+    }
+
+    .festival{
+        line-height: 1.5vw;
+        letter-spacing: -0.1vw;
+        font-size: 2vw;
+        text-align: center;
+    }
+
+    .hero-section {
+        text-align: center; /* Center the text */
+    }
+
+    .hero-section h2 {
+        margin: 5vw auto 0; /* Center the heading with some top margin */
+        max-width: 90%; /* Optional: Set a max width to keep it responsive */
+    }
+
+    .hero-section p {
+        text-align: center;
+        margin: 1vw auto; /* Center the paragraph with some margin */
+        max-width: 90%; /* Optional: Set a max width to keep it responsive */
+    }
+
+    .explore-festivals{
+        border-radius: 10px;
+        margin-bottom: 50px;
+    }
+
+    .top-images{
+        display: none;
+    }
+
+    .framed{
+        display: none;
+    }
+
+    .framed-tabletmobile{
+        margin-left: 1vw;
+        height: auto;
+        width: 50vw;
+    }
+
+    .egg-festival, .desert-festival, .flower-dance, .luau, .trout-derby, .moonlight-jellies, .stardew-fair, .spirits-eve, .festival-of-ice, .squidfest, .night-market, .winter-star {
+        display: flex;          /* Make the section a flex container */
+        align-items: center;    /* Center the items vertically */
+        justify-content: center; /* Optional: Center the items horizontally */
+    }
+
+    .egg-festival img.framed {
+        margin-right: 0.5vw;     /* Add space between the image and text */
+    }
+
+    .information h2{
+        display: none;
+    }
+
+    .information p{
+        font-size: 1.7vw;
+    }
+
+    /* FOOTER STYLING */
+    .footer-icons, .footer-navbar {
+        margin: 0.5vw; /* Adds vertical spacing */
+    }
+
+    .footer-icons img {
+        height: auto;
+        width: 4vw;
+    }
+
+    .footer-navbar a {
+        font-size: 3vw;
+    }
+
+    /* ABOUT.HTML */
+    .main-aboutus-page h3{
+        font-size: 10vw;
+    }
+    
+    .border-wrapper {
+        text-align: center;         /* Center text within the wrapper */
+    }
+    
+    .main-aboutus-page {
+        /* Center the text for the rest of the main content */
+        text-align: center;         /* Center text for main content */
+    }
+
+    /* CONTACT.HTML */
+    .form-container {
+        flex-direction: column; /* Stack everything vertically on mobile */
+    }
+
+    .clearfix {
+        flex-direction: column; /* Stack the question and info on mobile */
+    }
+
+    .question-info {
+        margin: 0 0 0 5vw;
+        order: 1; /* Make sure question-info appears above the form */
+    }
+
+    form {
+        width: 80vw; /* Set the width to 80% of the viewport width */
+        max-width: 100vw; /* Optional: Limit the maximum width for larger screens */
+        height: auto; /* Adjust height to fit content */
+        margin: 20px auto; /* Center the form horizontally */
+        padding: 20px;
+        font-size: 30px; /* Adjust font size as needed */
+    }
+
+    .name-group {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .name-field {
+        width: 48%; /* Set width to allow space for the margin */
+    }
+    
+    /* Add margin to the last name field for spacing */
+    .name-field:last-child {
+        margin-left: 4%; /* Adjust the value as needed for the desired gap */
+    }
+
+    .class-div.button-group {
+        display: flex; /* Use flexbox to arrange buttons in a row */
+        justify-content: space-between; /* Optional: Add space between buttons */
+        margin-top: 20px; /* Optional: Add some margin on top for spacing */
+    }
+    
+    .class-div.button-group .submit,
+    .class-div.button-group .reset {
+        width: 48%; /* Adjust width to fit side by side */
+    }
+
+    .question{
+        display: none;
+    }
+
+    .question.question-tabletmobile{
+        display: contents;
+    }
+
+    .question.question-tabletmobile h3{
+        margin: 0;
+        padding: 5vw;
+        text-align: center;
+    }
+
+    .question-info img{
+        margin-right: 1vw;
+    }
+
+    .footer-icons a img {
+        height: 45px;
+        width: auto;
+        justify-content: center;
+    }
+    
+    .footer-icons a{
+        width: 10vw;
+    }
+    
+    /* END OF FORM STYLING */
+}
+/* END OF TABLET VIEW */
+
+
+/* Media Queries Phone */
+@media screen and (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+    }
+
+    .table-soundtrack-section {
+        display: none; /* Hides the section */
+    }
+
+    .navbar{
+        top: 0;
+        height: 10vw;
+    }
+
+    .navbar ul {
+        height: auto; /* Let it adjust based on content height */
+        top: 100%; /* Position it directly below the navbar */
+        visibility: hidden; /* Initially hide the links before pressing hamburger menu */
+        opacity: 0; /* For animation */
+        position: absolute; /* Position it absolutely relative to .navbar */
+        padding-right: 0;
+        margin-right: 0;
+        right: -1.5vw; /* Align slightly to the right */
+        width: 20vw; /* Width of the ul */
+        background-color: #F2D499; /* Same background color as navbar */
+        border: 6px solid #B66C3F; /* Inside border */
+        z-index: 999; /* Ensure it is above other content */
+        transition: visibility 0s 0.2s, opacity 0.2s ease; /* Smooth transition */
+        display: flex; /* Use flexbox for layout */
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-end; /* Align items to the right */
+        overflow: hidden;
+    }
+    
+
+    .season-header{
+        position: sticky;
+        top: 11vw; /* Adjust this value based on your nav's height */
+        z-index: 500;
+    }
+
+    .navbar .title img{
+        width: auto;
+        height: 10vw;
+    }
+
+    #nav-links {
+        padding: 10px; /* Space around the menu */
+    }
+
+    .navbar ul.active {
+        visibility: visible; /* Make it visible */
+        opacity: 1; /* Make it fully visible */
+        transition: opacity 0.3s ease; /* Transition for opacity */
+    }
+
+    .navbar ul li {
+        list-style: none; /* Remove default list styling */
+        width: 17vw; /* Optional: Make the list items full width */
+        padding: 10px 0; /* Add padding for spacing around each button */
+
+    }
+
+    .navbar ul li a{
+        font-size: 2vw;
+        text-align: center;
+    }
+
+    .burger {
+        display: flex; /* Show burger icon on small screens */
+    }
+
+    /* Show links when the active class is applied */
+    #nav-links.active {
+        display: flex; /* Show links when active */
+    }
+
+    .nav-links #contact-us{
+        font-size: 1.5vw;
+    }
+    
+    .top-images{
+        display: none;
+    }
+
+    .framed{
+        display: none;
+    }
+
+    .hero-section {
+        text-align: center; /* Center the text */
+    }
+
+    .hero-section h2 {
+        margin: 5vw auto 0; /* Center the heading with some top margin */
+        max-width: 90%; /* Optional: Set a max width to keep it responsive */
+        font-size: 12vw;
+    }
+
+    .hero-section p {
+        text-align: center;
+        margin: 1vw auto; /* Center the paragraph with some margin */
+        max-width: 90%; /* Optional: Set a max width to keep it responsive */
+        font-size: 5vw;
+    }
+
+    .explore-festivals{
+        border-radius: 10px;
+        margin: 0 auto 50px auto;
+    }
+    
+    .explore-festivals button{
+        width: 40vw;
+        height: 15vw;
+        font-size: 5vw;
+        line-height: 0.76;
+        background-color: #B52121;
+        filter: drop-shadow(-5px 3px 4.3px rgba(0, 0, 0, 0.24));
+    }
+
+    .navbar .title span{
+        font-size: 10vw;
+    }
+
+    .season-header .title span{
+        font-size: 9vw;
+    }
+
+    .season-header .title .winter-span{
+        font-size: 9vw;
+    }
+
+    .footer-icons a img {
+        height: 5vw;
+        width: auto;
+    }
+    
+    .footer-icons a{
+        width: 10vw;
+    }
+
+    .framed-tabletmobile{
+        display: flex; /* Use flexbox for alignment */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically (if needed) */
+        height: auto; /* Maintain auto height */
+        width: 50vw; /* Set width */
+        margin: 0 auto; /* Center the element within its parent */
+    }
+
+    .information h2{
+        display: none;
+    }
+
+    .information {
+        width: 80%; /* Full width on mobile devices */
+        margin: 1vw auto 0.5vw auto; /* Removes margins for mobile */
+        padding-bottom: 9vw;
+    }
+
+    .information p {
+        font-size: 3vw;
+        text-align: center;
+        padding-left: 1vw;
+    }
+    
+    /* FOOTER STYLING */
+    .footer-icons, .footer-navbar {
+        margin: 0.5vw; /* Adds vertical spacing */
+        margin: 0 1vw;
+    }
+
+    .footer-icons img {
+        height: auto;
+        width: 4vw;
+    }
+
+    .footer-navbar a {
+        font-size: 3vw;
+    }
+
+    .signature {
+        margin-top: 30px;
+        padding: 20px 0; /* Optional: Add padding for spacing */
+    }
+    
+    .signature p{
+        text-align: center;
+        font-size: 3vw; 
+        margin: 0; /* Removes default margin on the paragraph */
+    }
+
+    @media screen and (max-width: 548px){
+        .supplement{
+            display: none;
+        }
+
+        .season-header .title span{
+            font-size: 10vw;
+        }
+    
+        .season-header .title .winter-span{
+            font-size: 10vw;
+        }
+    }
+
+    @media screen and (max-width: 459px){
+        .navbar.mainbar .title span{
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 322px){
+        .footer-navbar ul li{
+            margin-top: 10px;
+            text-align: center;
+            line-height: 2vw;
+        }
+    }
+
+    /* ABOUT US */
+    .main-aboutus-page h3{
+        font-size: 10vw;
+        width: 50vw;
+        padding: 2vw 0;
+    }
+    
+    
+    .main-aboutus-page .border-wrapper {
+        width: 50vw;
+        text-align: center;         /* Center text within the wrapper */
+        border-width: 2vw;
+        margin: 0 1.5vw 0 3vw;
+    }
+    
+    .main-aboutus-page {
+        /* Center the text for the rest of the main content */
+        text-align: center;         /* Center text for main content */
+        margin: 0;
+    }
+
+    .main-about p{
+        width: 85%;
+        margin: 2vw auto;
+        border-width: 6px;
+        font-size: 4vw;
+    }
+
+    /* CONTACT.HTML */
+    .form-container {
+        flex-direction: column; /* Stack everything vertically on mobile */
+    }
+
+    .class-div{
+        font-size: 5vw;
+    }
+
+    .clearfix {
+        flex-direction: column; /* Stack the question and info on mobile */
+    }
+
+    .question-info {
+        order: 1; /* Make sure question-info appears above the form */
+        margin: 0;
+    }
+
+    .question-info p{
+        padding-left: 10vw;
+    }
+
+    input, textarea{
+        border-width: 3px;
+        
+    }
+
+    form {
+        width: 80vw; /* Set the width to 80% of the viewport width */
+        max-width: 100vw; /* Optional: Limit the maximum width for larger screens */
+        height: auto; /* Adjust height to fit content */
+        margin: 20px auto; /* Center the form horizontally */
+        padding: 20px;
+        font-size: 30px; /* Adjust font size as needed */
+    }
+
+    .name-group {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .name-field {
+        width: 48%; /* Set width to allow space for the margin */
+    }
+    
+    /* Add margin to the last name field for spacing */
+    .name-field:last-child {
+        margin-left: 4%; /* Adjust the value as needed for the desired gap */
+    }
+
+    .class-div.button-group {
+        display: flex; /* Use flexbox to arrange buttons in a row */
+        justify-content: space-between; /* Optional: Add space between buttons */
+        margin-top: 20px; /* Optional: Add some margin on top for spacing */
+    }
+    
+    .class-div.button-group .submit,
+    .class-div.button-group .reset {
+        width: 48%; /* Adjust width to fit side by side */
+    }
+
+    .question{
+        display: none;
+    }
+
+    .question.question-tabletmobile{
+        display: contents;
+        
+    }
+
+    .question-tabletmobile h3{
+        text-align: center;
+        font-size: 15vw;
+        padding: 5vw 5vw;
+    }
+
+    .question-info p{
+        font-size: 3vw;
+    }
+
+    .question-info img{
+        height: auto;
+        width: 5vw;
+        margin-right: 1vw;
+    }
+
+    .contact-label {
+        font-size: 5vw;
+    }
+    
+}
