@@ -615,7 +615,7 @@ footer {
 }
 
 .footer-navbar li {
-    margin: 0 15px; /* Adds horizontal spacing */
+    margin: 0 1vw; /* Adds horizontal spacing */
 }
 
 .footer-navbar a {
@@ -972,7 +972,7 @@ footer {
         display: flex; /* Show links when active */
     }
 
-    .nav-links #contact-us{
+    .navbar #contact-us{
         font-size: 1.5vw;
     }
     
@@ -1063,8 +1063,7 @@ footer {
     
     /* FOOTER STYLING */
     .footer-icons, .footer-navbar {
-        margin: 0.5vw; /* Adds vertical spacing */
-        margin: 0 1vw;
+        margin: 0 0.5vw;
     }
 
     .footer-icons img {
@@ -1076,12 +1075,17 @@ footer {
         font-size: 3vw;
     }
 
+    .footer-navbar li{
+        padding-top: 2vw;
+    }
+
     .signature {
         margin-top: 30px;
-        padding: 20px 0; /* Optional: Add padding for spacing */
+        padding: 10px 0; /* Optional: Add padding for spacing */
     }
     
     .signature p{
+        
         text-align: center;
         font-size: 3vw; 
         margin: 0; /* Removes default margin on the paragraph */
