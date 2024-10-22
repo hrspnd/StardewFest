@@ -1238,3 +1238,142 @@ footer {
     }
     
 }
+
+@media print {
+    /* Hide elements not needed in print view */
+    .question, .class-div.button-group button, .question-info img, .navbar, .navbar.mainbar, .navbar.season-header, .hero-section, .footer-icons, .footer-navbar, .burger, .table-soundtrack-section, .top-images, .framed, .framed-tabletmobile, .signature, footer{
+        display: none;
+    }
+
+    /* Adjust fonts and sizes for better readability */
+    body {
+        font-size: 12pt;
+        line-height: 1.5;
+        color: black;
+        
+    }
+
+    .main-aboutus-page h3{
+        font-size: 30px;
+        color: black;
+        margin-left: 0px;
+    }
+
+    .border-wrapper{
+        border: none;
+        margin-left: 0px;
+    }
+
+    .border-wrapper h3{
+        margin-left: 0px;
+    }
+
+    .information h2, .question h3{
+        font-size: 20px;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+    .egg-festival, .desert-festival, .flower-dance, .luau, .trout-derby, .moonlight-jellies, .stardew-fair, .spirits-eve, .festival-of-ice, .squidfest, .night-market, .winter-star{
+        border: none;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .spring-festivals, .summer-festivals, .fall-festivals, .winter-festivals{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .information{
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .information p{
+        font-size: 12px;
+        width: 140%;
+        margin-bottom: 0;
+        margin-top: 0;
+        
+    }
+
+    h1, h2, h3 {
+        color: black;
+        margin-left: -100px;
+        text-align: left;
+        left: 0;
+    }
+
+    .main-about p{
+        border: none;
+        color: black;
+        font-size: 12px;
+    }
+
+    .center-div, .border-wrapper {
+        width: auto;
+    }
+
+    .form-container {
+        flex-direction: column; /* Stack everything vertically on mobile */
+    }
+
+    .clearfix {
+        flex-direction: column; /* Stack the question and info on mobile */
+    }
+
+    .question-info {
+        margin: 0 0 0 5vw;
+        order: 1; /* Make sure question-info appears above the form */
+    }
+
+    form {
+        width: 80vw; /* Set the width to 80% of the viewport width */
+        max-width: 100vw; /* Optional: Limit the maximum width for larger screens */
+        height: auto; /* Adjust height to fit content */
+        margin: 20px auto; /* Center the form horizontally */
+        padding: 20px;
+        font-size: 12px; /* Adjust font size as needed */
+    }
+
+    .name-group {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .name-field {
+        width: 48%; /* Set width to allow space for the margin */
+    }
+    
+    /* Add margin to the last name field for spacing */
+    .name-field:last-child {
+        margin-left: 4%; /* Adjust the value as needed for the desired gap */
+    }
+
+    .class-div.button-group {
+        display: flex; /* Use flexbox to arrange buttons in a row */
+        justify-content: space-between; /* Optional: Add space between buttons */
+        margin-top: 20px; /* Optional: Add some margin on top for spacing */
+    }
+    
+    .class-div.button-group .submit,
+    .class-div.button-group .reset {
+        width: 48%; /* Adjust width to fit side by side */
+    }
+
+    .question.question-tabletmobile{
+        display: contents;
+    }
+
+
+    .question-info p{
+        font-size: 12px;
+    }
+
+    .question.question-tabletmobile h3{
+        margin: 0;
+        padding: 5vw;
+        text-align: center;
+    }   
+}
