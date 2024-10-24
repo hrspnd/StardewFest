@@ -16,9 +16,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #F2D499; /* Inner background color */
-    height: 80px; /* Set a fixed height for the navbar */
-    border: 6px solid #B66C3F; /* Inside border */
+    background-color: #F2D499; 
+    height: 80px; 
+    border: 6px solid #B66C3F; 
 }
 
 .navbar .title {
@@ -29,15 +29,15 @@
 }
 
 .navbar .title img {
-    height: 100%; /* Make the image take up the full height of the navbar */
-    margin: 0; /* Remove any margins */
-    padding: 0; /* Remove any padding */
+    height: 100%; 
+    margin: 0; 
+    padding: 0; 
 }
 
 .navbar .title span {
-    font-size: 5vw; /* Responsive font size for the title */
-    color: #C3612E; /* Color of the text to match the border */
-    margin-left: 10px; /* Add some space between the image and the text */
+    font-size: 5vw; 
+    color: #C3612E;
+    margin-left: 10px;
 }
 
 .navbar .title .winter-span{
@@ -55,63 +55,62 @@
 
 .navbar ul li {
     margin: 0 0.78vw;
-    padding: 0; /* Reset padding */
-    display: flex; /* Ensure li is a flex container */
-    align-items: center; /* Vertically center contents */
+    padding: 0; 
+    display: flex; 
+    align-items: center;
 }
 
 .navbar ul li a {
     text-decoration: none;
-    color: #e0753b; /* Link color to match the border */
-    font-size: 1.5vw; /* Responsive font size for the links */
-    font-family: 'Silkscreen', cursive; /* Apply Silkscreen font to the buttons */
+    color: #e0753b; 
+    font-size: 1.5vw; 
+    font-family: 'Silkscreen', cursive;
     background-color: #FFE0A6;
-    padding: 5px 10px; /* Add some padding around the text */
-    border: 5px solid #D68D52C4; /* Combined borders */
-    border-left-color: #FFEBB8; /* Different left border */
-    border-bottom-color: #FFEBB8; /* Different bottom border */
-    display: inline-block; /* Ensure anchor behaves like a block for padding */
-    margin: 0; /* Reset margin */
-    line-height: normal; /* Ensure default line-height doesn't affect alignment */
+    padding: 5px 10px; 
+    border: 5px solid #D68D52C4; 
+    border-left-color: #FFEBB8; 
+    border-bottom-color: #FFEBB8; 
+    display: inline-block;
+    margin: 0; 
+    line-height: normal; 
     max-height: 40px;
 }
+
 /* Hamburger Menu Styles */
 .burger {
-    display: none; /* Hidden by default */
+    display: none;
     cursor: pointer;
     flex-direction: column;
     justify-content: space-around;
     height: 30px;
-    margin-right: 20px; /* Add some space to the right */
+    margin-right: 20px;
 }
 
 .line {
     height: 4px;
     width: 30px;
-    background-color: #C3612E; /* Color of the burger lines */
+    background-color: #C3612E;
 }
 /* END OF BURGER */
 
 .festival {
     font-size: 25px;
-    display: block; /* Stack the festival names on top of each other */
-    text-align: center; /* Center-align text within the link */
+    display: block;
+    text-align: center;
     line-height: 20px;
     letter-spacing: -0.21rem;
 }
 
 .one-line {
     display: inline-block;
-    width: 100%; /* Ensure it takes up the entire width of the container */
+    width: 100%;
     text-align: center;
 }
 
 .navbar ul li a:hover {
     color: #C86730;
 }
-
 /* END OF NAVBAR STYLING */
-
 
 h2{
     font-family: "VT323", monospace;
@@ -135,20 +134,20 @@ a{
 
 .top-images{
     display: flex;
-    justify-content: center; /* This centers the images horizontally */
+    justify-content: center; 
     flex-wrap: wrap;
-    gap: 10px; /* Optional: adds space between the images */
+    gap: 10px; 
     background: linear-gradient(180deg, rgba(239, 174, 105, 0.78) 0%, #FFE6B6 48.5%, rgba(239, 174, 105, 0.92) 100%);
 }
 
 .festival-button {
-    display: inline-block; /* Align buttons horizontally */
-    width: 473px; /* Set the desired width */
-    height: 400px; /* Set the desired height */
-    background-size: cover; /* Ensures the image covers the div */
-    cursor: pointer; /* Changes cursor to pointer on hover */
-    transition: transform 0.2s; /* Adds a transition effect */
-    margin: 10px; /* Adds some space between buttons */
+    display: inline-block; 
+    width: 473px; 
+    height: 400px; 
+    background-size: cover; 
+    cursor: pointer; 
+    transition: transform 0.2s; 
+    margin: 10px; 
 }
 
 .festival-button:hover {
@@ -157,29 +156,29 @@ a{
 
 .bottom-row {
     display: flex;
-    justify-content: center; /* Center the two images in the bottom row */
+    justify-content: center; 
     flex-wrap: wrap;
-    width: 100%; /* Forces the bottom row to take up full width */
-    margin-top: 10px; /* Optional: Add spacing between the two rows */
+    width: 100%; 
+    margin-top: 10px;
 }
 
 .top-image {
-    max-width: 100%; /* Ensures images don't overflow their container */
-    height: auto; /* Maintains the aspect ratio */
+    max-width: 100%;
+    height: auto; 
     margin: 20px 10px;
 }
 
 .season-header{
     position: sticky;
-    top: 80px; /* Adjust this value based on your nav's height */
+    top: 80px;
     z-index: 500;
 }
 
 .supplement {
-    width: 70px;       /* Set your desired width */
-    height: auto;      /* Maintain aspect ratio */
-    max-height: none;  /* Ensure no restrictions on height */
-    object-fit: contain; /* Control how the image should fit within its box */
+    width: 70px;      
+    height: auto;     
+    max-height: none;  
+    object-fit: contain; 
 }
 
 /* BACKGROUND IMAGE HERO SECTION */
@@ -271,30 +270,31 @@ a{
     font-size: 130%;
     font-style: italic;
 }
+
 /* TABLE STYLINGS */
 .border-wrapper {
     margin: 10px auto;
     border-style: solid;
     border-width: 25px;
     border-image: url(media/border.png) 20 repeat;
-    display: inline-block; /* Ensures the border only wraps the table content */
+    display: inline-block;
 }
 
 .center-div {
     display: flex;
-    justify-content: center; /* Centers the content horizontally */
-    align-items: center; /* Centers the content vertically if needed */
+    justify-content: center;
+    align-items: center;
 }
 
 table {
-    width: 100%; /* Adjust to fit the div */
-    border-collapse: collapse; /* Collapse inner borders */
+    width: 100%;
+    border-collapse: collapse;
     font-size: 30px;
 }
 
 th, td {    
     font-family: 'Silkscreen', cursive;
-    border: 7px solid #DD9E62; /* Adds a border to table cells */
+    border: 7px solid #DD9E62;
     padding: 10px;
     text-align: center;
     background-color: #FFE0A6;
@@ -310,12 +310,11 @@ td{
 .darker-color {
     background-color: #F5C48A;
 }
-
 /* END OF TABLE STYLINGS */
 
 .form-container {
-    display: flex; /* Set to flex to align children side by side */
-    align-items: flex-start; /* Align items at the start (top) */
+    display: flex;
+    align-items: flex-start;
 }
 
 .contact-us{
@@ -331,7 +330,7 @@ td{
     padding: 70px 30px 30px 70px;
 }
 
-.question-info{ /* whole div container */
+.question-info{ 
     width: 80%;
     margin: 0 auto 50px 20px;
 }
@@ -347,11 +346,10 @@ td{
 }
 
 /* FORM STYLING */
-
 form {
-    width: 250vw; /* Adjust width to fill the remaining space */
+    width: 250vw;
     height: 45vw;
-    margin: 20px 50px 20px auto; /* Remove margin for better alignment */
+    margin: 20px 50px 20px auto; 
     padding: 20px;
     font-size: 30px;
 }
@@ -377,7 +375,6 @@ form {
     text-align: right;
 }
 
-
 /* Flexbox for first name and last name fields */
 .name-group {
     display: flex;
@@ -386,7 +383,8 @@ form {
 
 .name-field {
     width: 48%; 
-} /* end of first name and last name fields */
+} 
+/* end of first name and last name fields */
 
 label {
     display: block;
@@ -405,7 +403,7 @@ em{
 input, textarea {
     width: 100%;
     padding: 10px;
-    box-sizing: border-box; /* Ensures proper width with padding */
+    box-sizing: border-box; 
     background-color: #FFE0A6;
     color: #723c1d;
     resize: none;
@@ -416,7 +414,7 @@ input, textarea {
 
 input::placeholder,
 textarea::placeholder {
-    color: #c3622e91; /* Gray placeholder text */
+    color: #c3622e91; 
 }
 
 input:focus,
@@ -433,8 +431,8 @@ textarea:focus {
 .class-div.button-group .reset{
     width: 250px;
 }
-
 /* END OF FORM STYLING */
+
 h1{
     font-family: 'Silkscreen', cursive;
     color: #C3612E;
@@ -476,15 +474,15 @@ h3{
     background: linear-gradient(180deg, rgba(239, 174, 105, 0.78) 0%, #FFE6B6 48.5%, rgba(239, 174, 105, 0.92) 100%);
     border: 8px solid #B66C3F;
 }
-/* AUDIO STYLING */
 
+/* AUDIO STYLING */
 .audio-player {
     display: flex;
     align-items: center;
-    gap: 10px; /* Adds spacing between controls */
+    gap: 10px; 
     width: 100%;
     max-width: 400px;
-    margin: 20px auto; /* Centers the audio player */
+    margin: 20px auto; 
     background-color: #ffe7bb;
     padding: 10px;
     border: 5px solid #B66C3F;
@@ -517,14 +515,14 @@ button:hover {
     height: 10px;
     background-color: #fff;
     border-radius: 5px;
-    position: relative; /* Required for correct positioning */
-    cursor: pointer; /* Makes the progress bar clickable */
+    position: relative; 
+    cursor: pointer;
 }
 
 .progress {
     height: 100%;
     background-color: #FF6347;
-    width: 0%; /* Initially 0%, will be updated as audio plays */
+    width: 0%;
     border-radius: 5px;
 }
 
@@ -586,15 +584,15 @@ button:hover {
 footer {
     border: 8px solid #B66C3F;
     display: flex;
-    flex-direction: column; /* Stack children vertically */
+    flex-direction: column;
     padding-top: 30px; 
     background: linear-gradient(180deg, rgba(239, 174, 105, 0.78) 0%, #FFE6B6 48.5%, rgba(239, 174, 105, 0.92) 100%);
 }
 
 .footer-icons, .footer-navbar {
     display: flex;
-    justify-content: center; /* Centers content horizontally */
-    margin: 10px 0; /* Adds vertical spacing */
+    justify-content: center;
+    margin: 10px 0;
     color: #C3612E;
 }
 
@@ -611,17 +609,17 @@ footer {
 
 .footer-navbar ul {
     display: flex;
-    list-style-type: none; /* Removes bullet points */
+    list-style-type: none;
 }
 
 .footer-navbar li {
-    margin: 0 1vw; /* Adds horizontal spacing */
+    margin: 0 1vw;
 }
 
 .footer-navbar a {
     font-family: 'Silkscreen', cursive;
     font-size: 35px;
-    text-decoration: none; /* Removes underline from links */
+    text-decoration: none;
     color: inherit;
 }
 
@@ -632,9 +630,9 @@ footer {
 .signature {
     margin-top: 30px;
     background-color: #B66C3F;
-    width: 100%; /* Ensures the background fills the entire width */
-    padding: 20px 0; /* Optional: Add padding for spacing */
-    box-sizing: border-box; /* Ensures padding is included in the total width */
+    width: 100%; 
+    padding: 20px 0; 
+    box-sizing: border-box; 
 }
 
 .signature p{
@@ -642,7 +640,7 @@ footer {
     color: #FFF; 
     font-size: 20px; 
     font-family: 'Silkscreen', cursive; 
-    margin: 0; /* Removes default margin on the paragraph */
+    margin: 0; 
 }
 
 .information{
@@ -655,31 +653,29 @@ footer {
 
 .framed {
     float: right;
-    max-width: 30vw; /* Ensures the image fits within its container */
+    max-width: 30vw;
     height: auto; 
 }
 
-/* Clear floats below the image */
 .stardew-fair::after {
     content: "";
     display: table;
-    clear: both; /* Ensures that the container wraps around floated elements */
+    clear: both;
 }
 
-/* Add margin to the last name field for spacing */
 .name-field:last-child {
-    margin-left: 4%; /* Adjust the value as needed for the desired gap */
+    margin-left: 4%; 
 }
 
 .class-div.button-group {
-    display: flex; /* Use flexbox to arrange buttons in a row */
-    justify-content: space-between; /* Optional: Add space between buttons */
-    margin-top: 20px; /* Optional: Add some margin on top for spacing */
+    display: flex; 
+    justify-content: space-between; 
+    margin-top: 20px; 
 }
 
 .class-div.button-group .submit,
 .class-div.button-group .reset {
-    width: 48%; /* Adjust width to fit side by side */
+    width: 48%;
 }
 
 .question.question-tabletmobile{
@@ -695,25 +691,12 @@ footer {
     .form-container {
         height: 1000px;
     }
-
-    .navbar .title span{
-        font-size: 96px
-    }
-    .navbar .title .winter-span{
-        font-size: 	76.8px;
-    }
-    .navbar ul li a{
-        font-size: 28.8px;
-    }
-    
 }
 
 /* TABLET VIEW */
 @media screen and (min-width: 768px) and (max-width: 1025px) {
-
-    /* Hide the table or its container */
     .table-soundtrack-section {
-        display: none; /* This will hide the table */
+        display: none; 
     }
 
     .supplement{
@@ -734,18 +717,18 @@ footer {
     }
 
     .hero-section {
-        text-align: center; /* Center the text */
+        text-align: center; 
     }
 
     .hero-section h2 {
-        margin: 5vw auto 0; /* Center the heading with some top margin */
-        max-width: 90%; /* Optional: Set a max width to keep it responsive */
+        margin: 5vw auto 0; 
+        max-width: 90%; 
     }
 
     .hero-section p {
         text-align: center;
-        margin: 1vw auto; /* Center the paragraph with some margin */
-        max-width: 90%; /* Optional: Set a max width to keep it responsive */
+        margin: 1vw auto; 
+        max-width: 90%; 
     }
 
     .explore-festivals{
@@ -768,13 +751,13 @@ footer {
     }
 
     .egg-festival, .desert-festival, .flower-dance, .luau, .trout-derby, .moonlight-jellies, .stardew-fair, .spirits-eve, .festival-of-ice, .squidfest, .night-market, .winter-star {
-        display: flex;          /* Make the section a flex container */
-        align-items: center;    /* Center the items vertically */
-        justify-content: center; /* Optional: Center the items horizontally */
+        display: flex;        
+        align-items: center;   
+        justify-content: center; 
     }
 
     .egg-festival img.framed {
-        margin-right: 0.5vw;     /* Add space between the image and text */
+        margin-right: 0.5vw;  
     }
 
     .information h2{
@@ -787,7 +770,7 @@ footer {
 
     /* FOOTER STYLING */
     .footer-icons, .footer-navbar {
-        margin: 0.5vw; /* Adds vertical spacing */
+        margin: 0.5vw;
     }
 
     .footer-icons img {
@@ -805,35 +788,34 @@ footer {
     }
     
     .border-wrapper {
-        text-align: center;         /* Center text within the wrapper */
+        text-align: center;    
     }
     
     .main-aboutus-page {
-        /* Center the text for the rest of the main content */
-        text-align: center;         /* Center text for main content */
+        text-align: center;      
     }
 
     /* CONTACT.HTML */
     .form-container {
-        flex-direction: column; /* Stack everything vertically on mobile */
+        flex-direction: column; 
     }
 
     .clearfix {
-        flex-direction: column; /* Stack the question and info on mobile */
+        flex-direction: column; 
     }
 
     .question-info {
         margin: 0 0 0 5vw;
-        order: 1; /* Make sure question-info appears above the form */
+        order: 1;
     }
 
     form {
-        width: 80vw; /* Set the width to 80% of the viewport width */
-        max-width: 100vw; /* Optional: Limit the maximum width for larger screens */
-        height: auto; /* Adjust height to fit content */
-        margin: 20px auto; /* Center the form horizontally */
+        width: 80vw; 
+        max-width: 100vw; 
+        height: auto;
+        margin: 20px auto; 
         padding: 20px;
-        font-size: 30px; /* Adjust font size as needed */
+        font-size: 30px; 
     }
 
     .name-group {
@@ -842,23 +824,22 @@ footer {
     }
     
     .name-field {
-        width: 48%; /* Set width to allow space for the margin */
+        width: 48%; 
     }
     
-    /* Add margin to the last name field for spacing */
     .name-field:last-child {
-        margin-left: 4%; /* Adjust the value as needed for the desired gap */
+        margin-left: 4%; 
     }
 
     .class-div.button-group {
-        display: flex; /* Use flexbox to arrange buttons in a row */
-        justify-content: space-between; /* Optional: Add space between buttons */
-        margin-top: 20px; /* Optional: Add some margin on top for spacing */
+        display: flex; 
+        justify-content: space-between; 
+        margin-top: 20px; 
     }
     
     .class-div.button-group .submit,
     .class-div.button-group .reset {
-        width: 48%; /* Adjust width to fit side by side */
+        width: 48%; 
     }
 
     .question{
@@ -888,20 +869,19 @@ footer {
     .footer-icons a{
         width: 10vw;
     }
-    
     /* END OF FORM STYLING */
 }
 /* END OF TABLET VIEW */
 
 
-/* Media Queries Phone */
+/* PHONE VIEW */
 @media screen and (max-width: 768px) {
     body{
         overflow-x: hidden;
     }
 
     .table-soundtrack-section {
-        display: none; /* Hides the section */
+        display: none; 
     }
 
     .navbar{
@@ -910,29 +890,29 @@ footer {
     }
 
     .navbar ul {
-        height: auto; /* Let it adjust based on content height */
-        top: 100%; /* Position it directly below the navbar */
-        visibility: hidden; /* Initially hide the links before pressing hamburger menu */
-        opacity: 0; /* For animation */
-        position: absolute; /* Position it absolutely relative to .navbar */
+        height: auto; 
+        top: 100%;
+        visibility: hidden; 
+        opacity: 0;
+        position: absolute;
         padding-right: 0;
         margin-right: 0;
-        right: -1.5vw; /* Align slightly to the right */
-        width: 20vw; /* Width of the ul */
-        background-color: #F2D499; /* Same background color as navbar */
-        border: 6px solid #B66C3F; /* Inside border */
-        z-index: 999; /* Ensure it is above other content */
-        transition: visibility 0s 0.2s, opacity 0.2s ease; /* Smooth transition */
-        display: flex; /* Use flexbox for layout */
-        flex-direction: column; /* Stack items vertically */
-        align-items: flex-end; /* Align items to the right */
+        right: -1.5vw;
+        width: 20vw; 
+        background-color: #F2D499;
+        border: 6px solid #B66C3F;
+        z-index: 999; 
+        transition: visibility 0s 0.2s, opacity 0.2s ease; 
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
         overflow: hidden;
     }
     
 
     .season-header{
         position: sticky;
-        top: 11vw; /* Adjust this value based on your nav's height */
+        top: 11vw;
         z-index: 500;
     }
 
@@ -942,19 +922,19 @@ footer {
     }
 
     #nav-links {
-        padding: 10px; /* Space around the menu */
+        padding: 10px;
     }
 
     .navbar ul.active {
-        visibility: visible; /* Make it visible */
-        opacity: 1; /* Make it fully visible */
-        transition: opacity 0.3s ease; /* Transition for opacity */
+        visibility: visible;
+        opacity: 1; 
+        transition: opacity 0.3s ease; 
     }
 
     .navbar ul li {
-        list-style: none; /* Remove default list styling */
-        width: 17vw; /* Optional: Make the list items full width */
-        padding: 10px 0; /* Add padding for spacing around each button */
+        list-style: none; 
+        width: 17vw; 
+        padding: 10px 0; 
 
     }
 
@@ -964,12 +944,11 @@ footer {
     }
 
     .burger {
-        display: flex; /* Show burger icon on small screens */
+        display: flex; 
     }
 
-    /* Show links when the active class is applied */
     #nav-links.active {
-        display: flex; /* Show links when active */
+        display: flex;
     }
 
     .navbar #contact-us{
@@ -985,19 +964,19 @@ footer {
     }
 
     .hero-section {
-        text-align: center; /* Center the text */
+        text-align: center; 
     }
 
     .hero-section h2 {
-        margin: 5vw auto 0; /* Center the heading with some top margin */
-        max-width: 90%; /* Optional: Set a max width to keep it responsive */
+        margin: 5vw auto 0; 
+        max-width: 90%; 
         font-size: 12vw;
     }
 
     .hero-section p {
         text-align: center;
-        margin: 1vw auto; /* Center the paragraph with some margin */
-        max-width: 90%; /* Optional: Set a max width to keep it responsive */
+        margin: 1vw auto; 
+        max-width: 90%; 
         font-size: 5vw;
     }
 
@@ -1037,12 +1016,12 @@ footer {
     }
 
     .framed-tabletmobile{
-        display: flex; /* Use flexbox for alignment */
-        justify-content: center; /* Center horizontally */
-        align-items: center; /* Center vertically (if needed) */
-        height: auto; /* Maintain auto height */
-        width: 50vw; /* Set width */
-        margin: 0 auto; /* Center the element within its parent */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        width: 50vw;
+        margin: 0 auto;
     }
 
     .information h2{
@@ -1050,8 +1029,8 @@ footer {
     }
 
     .information {
-        width: 80%; /* Full width on mobile devices */
-        margin: 1vw auto 0.5vw auto; /* Removes margins for mobile */
+        width: 80%;
+        margin: 1vw auto 0.5vw auto;
         padding-bottom: 9vw;
     }
 
@@ -1081,14 +1060,14 @@ footer {
 
     .signature {
         margin-top: 30px;
-        padding: 10px 0; /* Optional: Add padding for spacing */
+        padding: 10px 0;
     }
     
     .signature p{
         
         text-align: center;
         font-size: 3vw; 
-        margin: 0; /* Removes default margin on the paragraph */
+        margin: 0;
     }
 
     @media screen and (max-width: 548px){
@@ -1129,14 +1108,13 @@ footer {
     
     .main-aboutus-page .border-wrapper {
         width: 50vw;
-        text-align: center;         /* Center text within the wrapper */
+        text-align: center;     
         border-width: 2vw;
         margin: 0 1.5vw 0 3vw;
     }
     
     .main-aboutus-page {
-        /* Center the text for the rest of the main content */
-        text-align: center;         /* Center text for main content */
+        text-align: center;      
         margin: 0;
     }
 
@@ -1149,7 +1127,7 @@ footer {
 
     /* CONTACT.HTML */
     .form-container {
-        flex-direction: column; /* Stack everything vertically on mobile */
+        flex-direction: column;
     }
 
     .class-div{
@@ -1157,11 +1135,11 @@ footer {
     }
 
     .clearfix {
-        flex-direction: column; /* Stack the question and info on mobile */
+        flex-direction: column;
     }
 
     .question-info {
-        order: 1; /* Make sure question-info appears above the form */
+        order: 1; 
         margin: 0;
     }
 
@@ -1175,12 +1153,12 @@ footer {
     }
 
     form {
-        width: 80vw; /* Set the width to 80% of the viewport width */
-        max-width: 100vw; /* Optional: Limit the maximum width for larger screens */
-        height: auto; /* Adjust height to fit content */
-        margin: 20px auto; /* Center the form horizontally */
+        width: 80vw; 
+        max-width: 100vw; 
+        height: auto; 
+        margin: 20px auto;
         padding: 20px;
-        font-size: 30px; /* Adjust font size as needed */
+        font-size: 30px;
     }
 
     .name-group {
@@ -1189,23 +1167,22 @@ footer {
     }
     
     .name-field {
-        width: 48%; /* Set width to allow space for the margin */
+        width: 48%;
     }
     
-    /* Add margin to the last name field for spacing */
     .name-field:last-child {
-        margin-left: 4%; /* Adjust the value as needed for the desired gap */
+        margin-left: 4%; 
     }
 
     .class-div.button-group {
-        display: flex; /* Use flexbox to arrange buttons in a row */
-        justify-content: space-between; /* Optional: Add space between buttons */
-        margin-top: 20px; /* Optional: Add some margin on top for spacing */
+        display: flex;
+        justify-content: space-between; 
+        margin-top: 20px; 
     }
     
     .class-div.button-group .submit,
     .class-div.button-group .reset {
-        width: 48%; /* Adjust width to fit side by side */
+        width: 48%; 
     }
 
     .question{
@@ -1240,12 +1217,10 @@ footer {
 }
 
 @media print {
-    /* Hide elements not needed in print view */
     .question, .class-div.button-group button, .question-info img, .navbar, .navbar.mainbar, .navbar.season-header, .hero-section, .footer-icons, .footer-navbar, .burger, .table-soundtrack-section, .top-images, .framed, .framed-tabletmobile, .signature, footer{
         display: none;
     }
 
-    /* Adjust fonts and sizes for better readability */
     body {
         font-size: 12pt;
         line-height: 1.5;
@@ -1315,25 +1290,25 @@ footer {
     }
 
     .form-container {
-        flex-direction: column; /* Stack everything vertically on mobile */
+        flex-direction: column; 
     }
 
     .clearfix {
-        flex-direction: column; /* Stack the question and info on mobile */
+        flex-direction: column; 
     }
 
     .question-info {
         margin: 0 0 0 5vw;
-        order: 1; /* Make sure question-info appears above the form */
+        order: 1; 
     }
 
     form {
-        width: 80vw; /* Set the width to 80% of the viewport width */
-        max-width: 100vw; /* Optional: Limit the maximum width for larger screens */
-        height: auto; /* Adjust height to fit content */
-        margin: 20px auto; /* Center the form horizontally */
+        width: 80vw; 
+        max-width: 100vw; 
+        height: auto;
+        margin: 20px auto; 
         padding: 20px;
-        font-size: 12px; /* Adjust font size as needed */
+        font-size: 12px; 
     }
 
     .name-group {
@@ -1342,23 +1317,22 @@ footer {
     }
     
     .name-field {
-        width: 48%; /* Set width to allow space for the margin */
+        width: 48%;
     }
-    
-    /* Add margin to the last name field for spacing */
+
     .name-field:last-child {
-        margin-left: 4%; /* Adjust the value as needed for the desired gap */
+        margin-left: 4%;
     }
 
     .class-div.button-group {
-        display: flex; /* Use flexbox to arrange buttons in a row */
-        justify-content: space-between; /* Optional: Add space between buttons */
-        margin-top: 20px; /* Optional: Add some margin on top for spacing */
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
     }
     
     .class-div.button-group .submit,
     .class-div.button-group .reset {
-        width: 48%; /* Adjust width to fit side by side */
+        width: 48%;
     }
 
     .question.question-tabletmobile{
@@ -1376,4 +1350,3 @@ footer {
         text-align: center;
     }   
 }
-
